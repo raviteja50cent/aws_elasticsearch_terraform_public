@@ -4,7 +4,7 @@ This repo has info on how to create an elasticsearch instance on EC2.
 ## Instructions:
 
 First of all, everything I did was in ASW Free tier and used Terraform aws resources.
-I have followed below approach to create Elasticsearch(ES) node on EC2. As this is the first time working on this tool, I have referred few documents in Medium and Github to clearly understand how to get the ES up.
+I have followed below approach to create Elasticsearch(ES) node using terraform "es" module. As this is the first time working on this tool, I have referred few documents in Medium and Github to clearly understand how to get the ES up.
 
 1. Created EC2 instance using Terraform aws resource "aws_instance" using an access_key and access_id created for user "kubeit".
 2. Now I have chosen t2.small for ES and provided public access. Now, I can also create this under VPC, but tried to make it public as this is the initial try.
